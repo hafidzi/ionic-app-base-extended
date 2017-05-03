@@ -17,6 +17,12 @@ export class SignupPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  tapped(event,id) {
+  	this.navCtrl.push (SignupPage, {
+  		id:id
+  	});
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad Signup');
   }
